@@ -1,0 +1,26 @@
+# RPS Gesture Referee System - High Performance Configuration
+# Optimized for speed over accuracy
+
+# Gesture Classification Parameters
+ANGLE_THRESHOLD: 130.0
+
+# State Machine Parameters
+STABLE_FRAMES: 3        # Reduced for faster locking
+LOCK_DELAY: 0.5         # Faster transitions
+REVEAL_DURATION: 2.0
+
+# MediaPipe Parameters
+MODEL_COMPLEXITY: 0     # Fast model
+MIN_DETECTION_CONFIDENCE: 0.5  # Lower threshold
+MIN_TRACKING_CONFIDENCE: 0.4   # Lower threshold
+MAX_NUM_HANDS: 2
+
+# UI Parameters
+MIRROR_MODE: true
+SHOW_LANDMARKS: false   # Disabled for better FPS
+ICON_ALPHA: 0.7
+
+# Performance Parameters
+CAMERA_WIDTH: 640       # Lower resolution
+CAMERA_HEIGHT: 480
+TARGET_FPS: 60

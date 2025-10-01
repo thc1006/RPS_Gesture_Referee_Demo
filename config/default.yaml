@@ -1,0 +1,25 @@
+# RPS Gesture Referee System - Default Configuration
+
+# Gesture Classification Parameters
+ANGLE_THRESHOLD: 130.0  # Finger extension angle threshold (degrees)
+
+# State Machine Parameters
+STABLE_FRAMES: 5        # Number of stable frames required
+LOCK_DELAY: 1.0         # Lock delay (seconds)
+REVEAL_DURATION: 3.0    # Result display duration (seconds)
+
+# MediaPipe Parameters
+MODEL_COMPLEXITY: 0     # 0=fast, 1=accurate
+MIN_DETECTION_CONFIDENCE: 0.7
+MIN_TRACKING_CONFIDENCE: 0.5
+MAX_NUM_HANDS: 2
+
+# UI Parameters
+MIRROR_MODE: true       # Mirror mode (flip left-right)
+SHOW_LANDMARKS: true    # Show skeleton overlay
+ICON_ALPHA: 0.7         # Icon transparency (0-1)
+
+# Performance Parameters
+CAMERA_WIDTH: 1280
+CAMERA_HEIGHT: 720
+TARGET_FPS: 30
